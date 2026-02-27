@@ -1,0 +1,211 @@
+body {
+    background-color: #0a1929 !important;
+    color: white !important;
+}
+
+.carousel{
+    position: relative;
+    width: 50%; ;
+    margin: auto;
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+.about-container h1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #10ff00;
+}
+.about-container span{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: rgb#4efdac9c(75 255 172 / 61%);
+    color: rgba(64, 255, 64, 1);
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+}
+.about-main-img{
+
+}
+.fade-out { animation: fadeOut infinite 2s; }
+@keyframes fadeOut { 0% { opacity: 1; } 50% { opacity: 0; } }
+@keyframes fadeIn { from { opacity: 0; } /* Начальное состояние — полностью прозрачный */ to { opacity: 1; } /* Конечное состояние — полностью видимый */ }
+
+.map-bootstrap{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+.dropdown{
+    margin: 10px
+}
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-h-100-medium{
+    margin: 15%;
+    border-radius: 10px;
+    border: 1px solid #1e3a5f;
+    padding: 5%;
+    box-shadow: 10px -5px 15px #05101f;
+    background-color: #0f2a44;
+    color: white;
+}
+.card-title-product{
+    margin: 10px 0 20px 0;
+    color: white;
+}
+
+.card-text-product{
+    color: white;
+}
+.product-h4{
+    border-radius: 10px;
+    border: 1px solid #1e3a5f;
+    padding: 7px;
+    color: white;
+    background-color: #0f2a44;
+}
+.text-center{
+    margin-top: 2%;
+    color: white;
+}
+
+.card-img-top{
+    min-height: 186.66px;
+}
+.card-text-short_about{
+    min-height: 72px;
+    color: white;
+}
+
+
+.card {
+    background-color: #0f2a44 !important;
+    color: white !important;
+    border-color: #1e3a5f !important;
+}
+
+.navbar {
+    background-color: #0a1a2f !important;
+}
+
+.dropdown-menu {
+    background-color: #0f2a44 !important;
+    border-color: #1e3a5f !important;
+}
+
+.dropdown-item {
+    color: white !important;
+}
+
+.dropdown-item:hover {
+    background-color: #1e3a5f !important;
+    color: white !important;
+}
+
+.modal-content {
+    background-color: #0f2a44 !important;
+    color: white !important;
+    border-color: #1e3a5f !important;
+}
+
+.form-control {
+    background-color: #0a1a2f !important;
+    color: white !important;
+    border-color: #1e3a5f !important;
+}
+
+.form-control:focus {
+    background-color: #1e3a5f !important;
+    color: white !important;
+    border-color: #2b4b77 !important;
+    box-shadow: 0 0 0 0.2rem rgba(30, 58, 95, 0.5);
+}
+
+.btn-close {
+    filter: invert(1);
+}
+
+.table {
+    color: white !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #0f2a44 !important;
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: #1e3a5f !important;
+}
+
+.bg-white {
+    background-color: #0f2a44 !important;
+}
+
+.bg-light {
+    background-color: #1e3a5f !important;
+}
+
+.text-dark {
+    color: white !important;
+}
+
+.border {
+    border-color: #1e3a5f !important;
+}
+
+.btn-primary {
+    background-color: #1e3a5f;
+    border-color: #2b4b77;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2b4b77;
+    border-color: #3a5f8a;
+}
+
+.btn-secondary {
+    background-color: #0a1a2f;
+    border-color: #1e3a5f;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #1e3a5f;
+    border-color: #2b4b77;
+}
+
+.list-group-item {
+    background-color: #0f2a44;
+    color: white;
+    border-color: #1e3a5f;
+}
+
+.progress {
+    background-color: #0a1a2f;
+}
+
+.alert {
+    background-color: #0f2a44;
+    color: white;
+    border-color: #1e3a5f;
+}
+.carousel-item{
+    background-color: #c95fff !important;
+    border-radius: 50px !important;
+}
+.card-text-price{
+    color: #00e300;
+}

@@ -1,0 +1,24 @@
+body {
+    background-color: #0a1929;
+    color: white;
+}
+
+main {
+    background-color: #0a1929;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #99c2ff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
+p {
+    color: white;
+}
