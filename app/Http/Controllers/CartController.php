@@ -106,9 +106,10 @@ class CartController extends Controller
     }
 
     public function order()
-    {
+{
+    if(auth()->user()->is_admin == 1) {
         $orders = DB::table('order')->get();
-
+        
         foreach($orders as $order){
             $order->product = DB::table('order_cart')
                 ->select(
@@ -123,7 +124,33 @@ class CartController extends Controller
                 ->where('order_cart.order_id', '=', $order->id)
                 ->get();
         }
+    } 
+    else {
 
-        return view('order', compact('orders'));
+        $orders = DB::table('order')
+            ->join('order_cart', 'order.id', '=', 'order_cart.order_id')
+            ->where('order_cart.id_user', auth()->id())
+            ->select('order.*')
+            ->distinct()
+            ->get();
+
+        foreach($orders as $order){
+            $order->product = DB::table('order_cart')
+                ->select(
+                    'users.name as user_name',
+                    'users.surname as user_surname',
+                    'test.name as product_name',
+                    'cart.count'
+                )
+                ->join('cart', 'order_cart.cart_id', '=', 'cart.id')
+                ->join('test', 'cart.id_tovar', '=', 'test.id')
+                ->join('users', 'order_cart.id_user', '=', 'users.id')
+                ->where('order_cart.order_id', '=', $order->id)
+                ->where('order_cart.id_user', '=', auth()->id())
+                ->get();
+        }
     }
+
+    return view('order', compact('orders'));
+}
 }
